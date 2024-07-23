@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar CPF | Gerador de CPF</title>
+    <meta name="description" content="Ferramenta para validar CPF e gerar CPF válidos. Verifique a autenticidade do CPF e entenda o algoritmo e a origem do CPF no Brasil.">
+    <meta name="keywords" content="validar cpf, gerador de CPF, CPF, Cadastro de Pessoas Físicas, Brasil">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tool-container">
+        <h1>Validar CPF</h1>
+        <form id="cpfForm">
+            <label for="cpf">Digite o CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+            <button type="submit">Validar</button>
+        </form>
+        <div id="result"></div>
+        <div class="generator">
+            <h2>Gerar CPF Aleatório</h2>
+            <button id="generateBtn">Gerar CPF</button>
+            <div id="generatedCpfContainer">
+                <span id="generatedCpf"></span>
+                <button id="copyBtn" style="display: none;">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="content">
+            <h2>Saiba Mais Sobre o Algoritmo e a Origem do CPF</h2>
+            <p>Você sabe o que está por trás do gerador de CPF e como validar um CPF? Entenda os detalhes do algoritmo e a origem do CPF com o nosso guia completo.</p>
+            
+            <h3>Algoritmo de Geração de CPF</h3>
+            <p>O CPF, ou Cadastro de Pessoas Físicas, é composto por onze dígitos, sendo os dois últimos chamados de dígitos verificadores (DV's). Esses dígitos são gerados a partir dos nove primeiros, validando o número como um todo. O cálculo dos dígitos verificadores é feito em duas etapas, utilizando o módulo de divisão 11.</p>
+            
+            <h3>Como Conferir a Origem de um CPF</h3>
+            <p>Um método interessante para verificar a origem de um CPF é identificar o estado em que foi emitido. Este dado pode ser encontrado no penúltimo dígito do número do CPF, antes dos dois dígitos de controle. Por exemplo, no CPF nº 000.000.006-00, o número 6 indica que o documento foi emitido em Minas Gerais.</p>
+            
+            <p>Aqui estão os códigos correspondentes aos estados brasileiros:</p>
+            <ul>
+                <li><strong>1:</strong> Distrito Federal, Goiás, Mato Grosso do Sul e Tocantins</li>
+                <li><strong>2:</strong> Pará, Amazonas, Acre, Amapá, Rondônia e Roraima</li>
+                <li><strong>3:</strong> Ceará, Maranhão e Piauí</li>
+                <li><strong>4:</strong> Pernambuco, Rio Grande do Norte, Paraíba e Alagoas</li>
+                <li><strong>5:</strong> Bahia e Sergipe</li>
+                <li><strong>6:</strong> Minas Gerais</li>
+                <li><strong>7:</strong> Rio de Janeiro e Espírito Santo</li>
+                <li><strong>8:</strong> São Paulo</li>
+                <li><strong>9:</strong> Paraná e Santa Catarina</li>
+                <li><strong>0:</strong> Rio Grande do Sul</li>
+            </ul>
+
+            <h3>Ferramenta para Validar CPF</h3>
+            <p>Se você precisa verificar se um CPF é válido de acordo com o algoritmo do CPF, utilize a nossa ferramenta de validação de CPF. Esta ferramenta permite confirmar a autenticidade de qualquer CPF, assegurando sua validade e origem.</p>
+
+            <h3>Gerador de CPF</h3>
+            <p>Nosso gerador de CPF é uma ferramenta confiável que cria números de CPF válidos, utilizando o mesmo algoritmo usado pela Receita Federal. É ideal para testes em sistemas que requerem o uso de um CPF válido.</p>
+
+            <h3>Informações Importantes</h3>
+            <p>Este site não tem qualquer vínculo com a Receita Federal do Brasil. Para informações oficiais, consulte diretamente o site oficial do Cadastro de Pessoas Físicas da Receita.</p>
+
+            <h3>Conclusão</h3>
+            <p>Compreender o algoritmo e a origem do CPF é essencial para garantir a validade de documentos. Utilize nossas ferramentas para validar CPF e gerar números de CPF de forma segura e precisa.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
